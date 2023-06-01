@@ -36,7 +36,7 @@ sd(selisih)
 
 Maka, didapatkan nilai standar deviasi dari data selisih pasangan pengamatan adalah ```7.838651```
 
-* **b.  Carilah nilai t (p-value)** <br \>
+* **b.  Carilah nilai t (p-value)** <br />
 
 Untuk menyelesaikan soal diatas yaitu mencari nilai t dapat menggunakan fungsi ```t.test``` dan ```paired``` untuk membandingakn rata-rata antara data X dan data Y.
 ```R
@@ -45,8 +45,45 @@ t.test(Y, X, paired = TRUE)
 
 Maka, didapatkan nilai ```t = 6.8039``` dan nilai ```p-value = 0.0001373```
 
-* **c. Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam  hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen sebelum dan sesudah melakukan aktivitas 𝐴”.**<br \>
+* **c. Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam  hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen sebelum dan sesudah melakukan aktivitas 𝐴”.** <br />
 
 (p-value = 0.0001373) < (𝛼 = 0,05)
+
 Didapatkan nilai probabilitas dari uji t (p-value) = 0.0001373 lebih kecil jika dibandingkan dengan significant level 𝛼 = 0,05. Maka, hipotesis nol (H0) ditolak dan hipotesis alternatif diterima. Sehingga kesimpulan yang diambil berbanding terbalik dengan hipotesa nol (H0) yaitu ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen, baik sebelum dan sesudah melakukan aktivitas A.
 
+## Soal No 2
+>**Diketahui bahwa mobil dikemudikan rata-rata lebih dari 25.000 kilometer per tahun. Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3.000 kilometer (kerjakan menggunakan library seperti referensi pada modul).** <br />
+
+* **a. Apakah Anda setuju dengan klaim tersebut? Jelaskan.** <br />
+* **b. Buatlah kesimpulan berdasarkan p-value yang dihasilkan!** <br />
+
+## Soal No 3
+>**Diketahui perusahaan memiliki seorang data analyst yang ingin memecahkan
+permasalahan pengambilan keputusan dalam perusahaan tersebut. Selanjutnya
+didapatkanlah data berikut dari perusahaan saham tersebut.** <br />
+
+| Nama Kota/Atribut      | Bandung    | Bali      |
+| ---                    | ---        | ----------|
+| Jumlah Saham           | 20         |27         |
+| Sampel Mean            | 3.64       |2.79       |
+| Sampel Standar Deviasi | 1.67       |1.5        |
+
+>**Dari data di atas berilah keputusan serta kesimpulan yang didapatkan. Asumsikan nilai variancenya sama, apakah ada perbedaan pada rata-ratanya (α= 0.05)? 
+Buatlah:** <br />
+
+* **a. H0 dan H1** <br />
+* **b. Hitung sampel statistik** <br />
+* **c. Lakukan uji statistik (df=2)** <br />
+* **d. Nilai kritikal** <br />
+* **e. Keputusan** <br />
+* **f. Kesimpulan** <br />
+
+## Soal No 4
+>**Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: 
+https://drive.google.com/file/d/1pICtCrf61DRU86LDPQDJmcKiUMVt9ht4/view. 
+
+Dengan data tersebut :
+
+* **a. Buatlah plot sederhana untuk visualisasi data** <br />
+* **b. Lakukan uji ANOVA dua arah.** <br />
+* **c. Tampilkan tabel dengan mean dan standar deviasi keluaran cahaya untuk setiap perlakuan (kombinasi kaca pelat muka dan suhu operasi).** <br />
