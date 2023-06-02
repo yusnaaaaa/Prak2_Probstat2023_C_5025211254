@@ -85,6 +85,7 @@ populasi_sd <- 3000
 zsum.test(mean.x = sampel_mean, sigma.x=populasi_sd, n.x = n,  
           alternative = "greater", mu = klaim_mean)
  ```
+ ```install.packages("BSDA")``` berfungsi untuk instal package "BSDA" yang digunakan untuk analisis statisik yang terkait dengan statistik bisnis dan metode analisis data. ```library(BSDA)``` berfungsi untuk memuat fungsi-fungsi dan fitur-fitur yang disediakan oleh package "BSDA".
  
 Berikut merupakan Hasil dari program ketika dijalankan :
 
