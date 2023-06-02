@@ -38,6 +38,7 @@ Maka, didapatkan nilai standar deviasi dari data selisih pasangan pengamatan ada
 
 Berikut merupakan Hasil dari program ketika dijalankan :
 
+<img width="293" alt="1a" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/71fe9586-87e7-4a9b-8135-c1db8a6e65c3">
 
 * **b.  Carilah nilai t (p-value)** <br />
 
@@ -50,6 +51,7 @@ Maka, didapatkan nilai ```t = 6.8039``` dan nilai ```p-value = 0.0001373```
 
 Berikut merupakan Hasil dari program ketika dijalankan :
 
+<img width="398" alt="1b" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/ef123ada-ea2c-4290-9724-95e343cb9621">
 
 * **c. Tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam  hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen sebelum dan sesudah melakukan aktivitas 𝐴”.** <br />
 
@@ -85,7 +87,8 @@ zsum.test(mean.x = sampel_mean, sigma.x=populasi_sd, n.x = n,
  ```
  
 Berikut merupakan Hasil dari program ketika dijalankan :
- 
+
+<img width="399" alt="2c" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/1d91f7cc-d8c7-4b63-81ed-306962c4abb4"> 
  
 Hasil uji z-sum menunjukkan bahwa nilai ```p-value = 1```, yang berarti nilai p-value lebih besar daripada nilai α, ```nilai α = 0.05```.
 
@@ -124,9 +127,11 @@ tsum.test(xbar1, sd1, n1, xbar2, sd2, n2,
           alternative = "greater", var.equal = TRUE)
 ```
 Setelah menjalankan kode diatas, akan dilakukan pengujian t-sum untuk menguji apakah rata-rata sampel pertama lebih besar daripada rata-rata sampel kedua, dengan asumsi varian sama. Hasil uji t-sum akan menghasilkan nilai t-statistik, derajat kebebasan, dan nilai p-value yang dapat digunakan untuk membuat keputusan statistik.
+Maka, didapatkan nilai  ```t = 1.8304```
 
 Berikut merupakan Hasil dari program ketika dijalankan :
 
+<img width="416" alt="3b" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/52c237be-4060-4058-81e9-635936a4c572">
 
 * **c. Lakukan uji statistik (df=2)** <br />
 Untuk menyelesaikan soal diatas, pertama yaitu membuat plot distribusi t-student dengan derajat kebebasan (degrees of freedom) yang telah ditentukan. Kemudian, digunakan fungsi ```plotDist()``` dari library mosaic.
@@ -141,6 +146,10 @@ Dengan menjalankan program tersebut, kita akan mendapatkan sebuah plot yang meng
 
 Berikut merupakan Hasil dari program ketika dijalankan :
 
+<img width="293" alt="3c1" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/da9e89b1-639a-4533-96c4-c56682dca7f8">
+<br />
+
+<img width="371" alt="3c2" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/248b2444-8c0b-45b5-a97d-49ed87681a8d">
 
 * **d. Nilai kritikal** <br />
 Untuk menyelesaikan soal diatas dapat menggunakan fungsi ```qt()``` untuk menghitung nilai-nilai kritis (critical values) dari distribusi t-student.
@@ -155,6 +164,7 @@ Dengan menjalankan kode tersebut, akan dihasilkan dua nilai kritis yaitu ```nk_l
 
 Berikut merupakan Hasil dari program ketika dijalankan :
 
+<img width="299" alt="3d" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/1f9f4549-9cbf-4f43-b765-ef1310a0f16d">
 
 * **e. Keputusan** <br />
 Pada soal di poin B didapatkan ```p-value = 0.03691``` dimana nilai tersebut lebih kecil dari ```𝛼 = 0.05```. Maka, Hipotesis Nol H0 ditolak dan Hipotesis Alternatif H1 diterima
@@ -164,7 +174,7 @@ Sesuai dengan beberapa uji yang telah dilakukan yang mana didapatkan nilai p-val
 
 ## Soal No 4
 >**Data yang digunakan merupakan hasil eksperimen yang dilakukan untuk mengetahui pengaruh suhu operasi (100˚C, 125˚C dan 150˚C) dan tiga jenis kaca pelat muka (A, B dan C) pada keluaran cahaya tabung osiloskop. Percobaan dilakukan sebanyak 27 kali dan didapat data sebagai berikut: 
-https://drive.google.com/file/d/1pICtCrf61DRU86LDPQDJmcKiUMVt9ht4/view. 
+https://drive.google.com/file/d/1pICtCrf61DRU86LDPQDJmcKiUMVt9ht4/view.**
 
 Dengan data tersebut :
 
@@ -188,6 +198,18 @@ qplot(x = Temp, y = Light, geom = "point", data = data) + facet_grid(.~Glass, la
 Data dari file CSV dimasukkan ke dalam dataset menggunakan fungsi ```read_csv()``` dan diobservasi menggunakan fungsi ```head()```. Selanjutnya, struktur dataset dianalisis menggunakan fungsi ```str()```. Kemudian fungsi ```qplot()``` berfungsi untuk membuat visualisasi plot sederhana.
 
 Berikut merupakan Hasil dari program ketika dijalankan :
+- data
+
+<img width="537" alt="4a data" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/c44a593a-7d4e-462e-bee0-782f86cbc328">
+
+- str(data)
+
+<img width="424" alt="4a strdata" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/c7bfecd7-9b5d-435f-97f5-d027e97148d4">
+
+-```qplot()```
+
+<img width="380" alt="4a qplot" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/7a11a632-5f77-4da2-8b21-ac73b382fe1b">
+
 
 * **b. Lakukan uji ANOVA dua arah.** <br />
 Untuk menyelesaikan soal diatas yaitu dengan melakukan uji ANOVA dua arah dengan menggunakan fungsi ```as.factor()``` yang mana variabel dibuat sebagai factor.
@@ -203,6 +225,7 @@ Setelah menjalankan kode tersebut, dataset ```data``` akan diubah menjadi faktor
 
 Berikut merupakan Hasil dari program ketika dijalankan :
 
+<img width="506" alt="4b" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/de460d6e-0739-4a9f-826f-30750d6171a9">
 
 * **c. Tampilkan tabel dengan mean dan standar deviasi keluaran cahaya untuk setiap perlakuan (kombinasi kaca pelat muka dan suhu operasi).** <br />
 Untuk menyelesaikan soal diatas yaitu untuk mendapatkan ```data_summary``` sesuai dengan mean dan standar deviasinya adalah dengan menggunakan fungsi ```group_by()``` dan fungsi ```summarise()```
@@ -215,3 +238,5 @@ print(data_summary)
 Setelah menjalankan kode tersebut, dataset ```data``` akan dikelompokkan berdasarkan "Glass" dan "Temp", kemudian dilakukan perhitungan rata-rata dan standar deviasi variabel "Light" untuk setiap kelompok. Hasilnya akan diurutkan berdasarkan rata-rata secara menurun dan dicetak dalam bentuk tabel. Ini memberikan gambaran tentang nilai rata-rata dan variasi dari variabel "Light" untuk setiap kombinasi "Glass" dan "Temp" dalam dataset.
 
 Berikut merupakan Hasil dari program ketika dijalankan :
+
+<img width="502" alt="4c" src="https://github.com/yusnaaaaa/Prak2_Probstat2023_C_5025211254/assets/91377793/54e7b965-c2c9-4e6f-98e4-f84dfcda6bf7">
